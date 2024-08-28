@@ -19,6 +19,14 @@ let atual = 0;
 let pergunaAtual;
 
 function mostraPerguntas(){
-    pergunaAtual = perguntas[atual];
-    caixaPerguntas.textContent = pergunaAtual
+    pergunaAtual = perguntas[posicao];
+    caixaPerguntas.textContent = pergunaAtual.enunciado;
 }
+
+mostraPergunta();
+
+function mostraAlternativas(){
+
+}
+
+mostraPergunta();
