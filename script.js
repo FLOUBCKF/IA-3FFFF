@@ -11,22 +11,23 @@ const perguntas = [ //serve para abrir lista de perguntas
     {
         enunciado: "Pergunta 2",
         alternativas: ["Alternativa 1","Alternativa 2"]
+    },
+    {
+        enunciado: "Pergunta 3",
+        alternativas: ["Alternativa 1","Alternativa 2"]
     }
-    
 ]
 
-let atual = 0;
-let pergunaAtual;
+let posicao = 0;
+let perguntaAtual;
 
-function mostraPerguntas(){
-    pergunaAtual = perguntas[posicao];
-    caixaPerguntas.textContent = pergunaAtual.enunciado;
+function mostraPergunta(){
+    perguntaAtual = perguntas[posicao];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
 }
-
-mostraPergunta();
-
 function mostraAlternativas(){
-
+    
 }
 
 mostraPergunta();
